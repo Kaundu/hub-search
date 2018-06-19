@@ -1,3 +1,10 @@
+<form class="search-form"  action="" >
+  <div class="form-group">
+    <input type="text"  class="form-control" placeholder="search github user"
+    [(ngModel)]="username" name="username"(keyup)="findProfile()" >
+  </div>
+
+</form>
 <div *ngIf="profile">
 
 
