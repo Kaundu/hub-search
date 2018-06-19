@@ -13,3 +13,10 @@
         <div class="col-md-3">
           <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile Image">
         </div>
+        <div>
+          <p>
+            <span class="label label-default">{{profile.followers}} followers</span>
+            <span class="label label-default">{{profile.following}} following</span>
+            <span class="label label-default">{{profile.public_repos}} Public Repositories</span>
+          </p>
+          <p><a href="{{profile.html_url}}" class="btn btn-success btn-sm" target="_blank">View profile on github</a></p>
