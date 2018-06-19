@@ -21,6 +21,7 @@
       <div class="row">
         <div class="col-md-3">
           <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile Image">
+          <img src="{{profile.avatar_url}}" class="responsive-img circle responsive-img" alt="Profile Image">
         </div>
         <div class="col-md-5">
           <ul class="list-group">
@@ -35,6 +36,10 @@
             <span class="label label-default">{{profile.followers}} followers</span>
             <span class="label label-default">{{profile.following}} following</span>
             <span class="label label-default">{{profile.public_repos}} Public Repositories</span>
+            <button class="btn btn-default btn-sm waves-effect" class="btn pulse btn red waves-effect">{{profile.public_repos}} Public Repos</button>
+            <button class="btn btn-primary btn-sm" class=" btn orange">{{profile.followers}} Followers</button>
+            <button class="btn btn-success btn-sm" class=" btn green" > {{profile.following}} Following</button>
+
           </p>
           <p><a href="{{profile.html_url}}" class="btn btn-success btn-sm" target="_blank">View profile on github</a></p>
           <div class="panel panel-default">
