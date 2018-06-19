@@ -1,3 +1,4 @@
+
 <form class="search-form"  action="" >
   <div class="form-group">
     <input type="text"  class="form-control" placeholder="search github user"
@@ -5,6 +6,9 @@
   </div>
 
 </form>
+
+
+
 <div *ngIf="profile">
 
 
@@ -20,7 +24,6 @@
     <div class="panel body">
       <div class="row">
         <div class="col-md-3">
-          <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile Image">
           <img src="{{profile.avatar_url}}" class="responsive-img circle responsive-img" alt="Profile Image">
         </div>
         <div class="col-md-5">
@@ -33,9 +36,6 @@
       <div class="col-md-4">
         <div>
           <p>
-            <span class="label label-default">{{profile.followers}} followers</span>
-            <span class="label label-default">{{profile.following}} following</span>
-            <span class="label label-default">{{profile.public_repos}} Public Repositories</span>
             <button class="btn btn-default btn-sm waves-effect" class="btn pulse btn red waves-effect">{{profile.public_repos}} Public Repos</button>
             <button class="btn btn-primary btn-sm" class=" btn orange">{{profile.followers}} Followers</button>
             <button class="btn btn-success btn-sm" class=" btn green" > {{profile.following}} Following</button>
